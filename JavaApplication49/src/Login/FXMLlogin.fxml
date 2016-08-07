@@ -4,15 +4,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="Login.FXMLloginController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@estilo%20login.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.FXMLloginController">
    <children>
       <PasswordField layoutX="258.0" layoutY="188.0" />
       <Label layoutX="105.0" layoutY="188.0" prefHeight="25.0" prefWidth="84.0" text="Contraseña" />
       <Label layoutX="105.0" layoutY="121.0" text="Usuario" />
       <TextField layoutX="258.0" layoutY="117.0" />
       <Button fx:id="btniniciar" layoutX="258.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Iniciar Sesion" />
+      <ImageView fitHeight="94.0" fitWidth="133.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../descarga.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

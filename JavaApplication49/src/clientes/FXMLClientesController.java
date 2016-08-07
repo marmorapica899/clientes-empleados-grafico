@@ -12,14 +12,23 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
+import Persona.Cliente;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 
 public class FXMLClientesController implements Initializable {
 
-   @FXML
-    private Button btnRegresar;
+    @FXML  private Button btnRegresar;
+    @FXML private TextField txtcedula;
+    @FXML private TextField txtedad;
+    @FXML private ComboBox cbgenero;
+    @FXML private TextField txtnombre;
+    @FXML private TextField txtapellido;
+    @FXML private TextField txtdireccion;
+    @FXML private TextField txttelefonica;
+    @FXML private TextField txtemail;
+    @FXML private ComboBox dateingreso;
     
-    @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
         
         Stage stage;
@@ -38,5 +47,7 @@ public class FXMLClientesController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    
     
 }
